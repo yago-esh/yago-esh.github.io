@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yago Echave - Senior Backend & Conversational AI Engineer">
+    <title>Yago Echave | AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">Yago Echave</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="container">
+                <h1 class="hero-title">Senior Backend & <span class="gradient">Conversational AI</span> Engineer</h1>
+                <p class="hero-subtitle">8+ years designing, developing, and improving intelligent conversational agents and LLM-based automation solutions in Contact Center environments</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#" class="btn btn-secondary" onclick="downloadCV()">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-category="backend">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Java</span><span>Node.js</span><span>Python</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="ai">
+                        <h3>Conversational AI / NLU</h3>
+                        <div class="skill-tags">
+                            <span>LLMs</span><span>Prompt Engineering</span><span>Nuance Mix</span><span>Amazon Lex</span><span>DialogFlow</span><span>Genesys Cloud</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-category="cloud">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span>AWS</span><span>Azure</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Senior Backend & AI Engineer</h3>
+                        <p class="company">Sabio Group | 2017 - Present</p>
+                        <ul>
+                            <li>Designed and maintained conversational flows for voice and digital channels across Telco and Energy clients (Vodafone, Caser, AXA, Naturgy, Avatel)</li>
+                            <li>Built and optimized LLM/NLU components for intent classification and self-service workflows</li>
+                            <li>Led migration from Azure OpenAI to AWS Nova Pro LLM for Naturgy, improving semantic alignment</li>
+                            <li>Designed end-to-end generative voice agent with agentic architecture for Avatel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Key Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Generative IVR - Avatel</h3>
+                        <p>Full generative voice agent with open conversation + automated self-service tasks. Strategic implementation for future multi-client scalability.</p>
+                        <div class="tech-stack">AWS Bedrock | LLMs | Voice | Agentic Architecture</div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Azure OpenAI to AWS Bedrock Migration - Naturgy</h3>
+                        <p>Migrated classification models to Nova Pro LLM for customer call intent detection. Reduced vendor lock-in and improved semantic alignment.</p>
+                        <div class="tech-stack">AWS Bedrock | Nova Pro | Intent Classification</div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Google Play Review Intent Classifier - Vodafone</h3>
+                        <p>LLM-based pipeline to detect release issues and classify user feedback. Reduced manual triage time and improved release monitoring.</p>
+                        <div class="tech-stack">LLM Pipelines | Classification | Automation</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-demo">
+            <div class="container">
+                <h2 class="section-title">AI Demo: CV Chatbot</h2>
+                <div class="chat-container">
+                    <div id="chat-messages"></div>
+                    <input type="text" id="chat-input" placeholder="Ask about my experience, projects, or tech stack..." autocomplete="off">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>📧 yago@example.com | 📱 +34 606 78 33 23 | 📍 Madrid</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
