@@ -74,6 +74,7 @@ const responses = {
     'proyectos': 'Destaco:\n• Generative IVR para Avatel - Voice agent con arquitectura agentic\n• Migración Azure OpenAI → AWS Bedrock para Naturgy\n• Intent classifier para Google Play reviews de Vodafone',
     'tecnologías': 'Backend: Java, Python, Node.js, JavaScript\nAI/NLU: LLMs, Prompt Engineering, Nuance Mix, Amazon Lex, DialogFlow, Genesys Cloud\nCloud: AWS, Azure, GCP, Docker, Kubernetes, CI/CD',
     'contacto': '📧 yago.esh@gmail.com\n📱 +34 606 78 33 23\n📍 Madrid, España',
+    'educacion': 'Graduado en Ingeniería de Software por la Universidad Politécnica de Madrid (2013-2017). Sólida formación en desarrollo de software, arquitectura de sistemas y principios de ingeniería.',
     'aws': 'Experiencia con AWS: Bedrock, Lambda, S3, SageMaker, EC2, RDS, DynamoDB',
     'llms': 'Trabajé con: Claude, GPT-4, Nova Pro, Llama, Mistral. Especializado en prompt engineering y fine-tuning.'
 };
@@ -140,11 +141,9 @@ function removeTypingIndicator() {
 function downloadCV() {
     // Crear un enlace temporal para descargar
     const link = document.createElement('a');
-    link.href = '#'; // Aquí irá la URL real del CV
+    link.href = 'CV - Yago Echave - AI Engineer.pdf';
     link.download = 'Yago_Echave_CV.pdf';
+    document.body.appendChild(link);
     link.click();
-    // Alternativa: mostrar un mensaje
-    setTimeout(() => {
-        alert('El CV se descargará cuando se agregue el archivo PDF al repositorio.');
-    }, 200);
+    document.body.removeChild(link);
 }
